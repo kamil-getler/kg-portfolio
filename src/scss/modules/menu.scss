@@ -1,0 +1,35 @@
+@mixin box {
+    margin-right: 80px;
+    display: inline-block;
+    
+    
+    border-bottom: 1px solid;
+}
+
+.menu{
+
+position: fixed;
+background: blue;
+width: 100%;
+height: 50px;
+ &__page{
+    flex-flow: row nowrap;
+     position: absolute;
+     display: flex;
+     right:20px;
+     &--projekty{
+        @include box;
+        
+     
+    }
+     &--kontakt{
+        @include box;
+         
+        
+     }
+     &--Omnie{
+        @include box;
+
+     }
+ }
+}

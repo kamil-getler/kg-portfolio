@@ -1,13 +1,19 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import "modules/hello.scss";
+@import "modules/menu.scss";
+@import "modules/cyber_eye.scss";
+@import "modules/content.scss";
+
+html  {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 body {
   background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  color: rgb(255, 255, 255);
+  
 }
