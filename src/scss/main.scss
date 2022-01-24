@@ -4,6 +4,11 @@
 @import "modules/menu.scss";
 @import "modules/cyber_eye.scss";
 @import "modules/content.scss";
+@import "modules/contentext.scss";
+@import "modules/kontakt.scss";
+@import "modules/oMnie.scss";
+@import "modules/projekty.scss";
+
 
 html  {
     box-sizing: border-box;
@@ -13,7 +18,10 @@ html  {
   }
 
 body {
+  
+  height: 100vh;
   background: $wtf;
   color: rgb(255, 255, 255);
+  background: linear-gradient(153deg, rgba(2,0,36,1) 0%, rgba(13,12,59,0.9654236694677871) 45%, rgba(0,212,255,1) 100%);
   
 }

@@ -1,9 +1,13 @@
 @mixin border{
-    
-    height: 100px;
+   
+    display: block;
+    overflow: hidden;
+    height: 140px;
     border: 1px solid white;
+    
 }
 @mixin imgCointener{
+    
         margin: auto;
         background-size: cover;
         width: 96px;
@@ -13,18 +17,19 @@
 
 .content{
     display:flex;
-    background: $wtf;
+    
     &__left{
+        margin-top: 100px;
         flex-flow: column nowrap; 
         align-items: center;
         display: flex;
-        background: $wtf;
+        
         
         width: 160px;
         border-right:1px solid 
         }
         &__point{
-            margin-top: 100px;
+           
             background: yellow;
             flex-flow: column nowrap;
             width: 50px;
@@ -32,36 +37,51 @@
             border-radius: 50%;
         
         }
+   
     }
 
 .content__right {
-    margin-left: 50px;
-    margin-right: 50px;
-      background: $wtf;
-      height: 100vh;
+    position: relative;
+    top:20px;
+    margin-left: 60px;
+    margin-right: 60px;
+      
+      height: 100%;
       width: 100%;
       
       &--html{
+       
+    
         @include border;
         background: rgb(209, 97, 17);
+        transition-property: height;
+        transition-duration: 2s;
+        
+        
         
         }
         &--css{
             @include border;
+            
             margin-top:30px ;
             background: rgb(72, 123, 235);
+            transition-property: height;
+            transition-duration: 2s;
           }
           &--js{
             @include border;
             margin-top:30px ;
             background: rgb(225, 245, 49);
+            transition-property: height;
+            transition-duration: 2s;
           }
     }
 
     .img__container--html{
         background-image: url('../assets/img/html.png');
-        @include imgCointener;}
-      
+        @include imgCointener;
+    
+    }
   
      .img__container--css{
         background-image: url('../assets/img/css.png');
@@ -74,23 +94,18 @@
 
       
     
-        #html:hover{
-           
-            background: red;
-            animation-name: spin4;
-            animation-duration:4s;
-            animation-delay: 1s;
-            
-        }
-      @keyframes spin4{
-         0%{ height:0px}
-        
-         100%{height: 300px}
+        .content__right--html:hover{
+           height: 300px
       
         }
-        #css:hover{
-            background: red;
-        }
-        #js:hover{
-            background: red;
-        }
+        
+        .content__right--css:hover{
+            height: 300px
+       
+         }
+        
+         .content__right--js:hover{
+            height: 300px
+       
+         }
+         
