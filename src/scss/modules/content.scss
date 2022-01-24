@@ -34,8 +34,9 @@
         }
     }
 
-.content__right{
-    margin-left: 10px;
+.content__right {
+    margin-left: 50px;
+    margin-right: 50px;
       background: $wtf;
       height: 100vh;
       width: 100%;
@@ -73,4 +74,23 @@
 
       
     
- 
+        #html:hover{
+           
+            background: red;
+            animation-name: spin4;
+            animation-duration:4s;
+            animation-delay: 1s;
+            
+        }
+      @keyframes spin4{
+         0%{ height:0px}
+        
+         100%{height: 300px}
+      
+        }
+        #css:hover{
+            background: red;
+        }
+        #js:hover{
+            background: red;
+        }
