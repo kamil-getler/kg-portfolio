@@ -11,17 +11,13 @@
      animation-delay: 0;
 }
 .box{
-    display: block;
+   position: absolute;
+   top: 15px;
     width: 100%;
     height: 200px;
-  
     
 }
-.box_eye{
-    display: block;
-    position: fixed;
-    z-index: 1;
-}
+
 .cyber_eye{
     
      width: 70px;
@@ -64,21 +60,4 @@
      100%{transform: rotate(360deg);}
   }
 
-  .box_eye32{
-   display: block;
-  margin-top: 12px
-}
-
-  .cyber_eye_32{
-   @include eye;
-   border-top-color: rgb(138, 41, 41);
-   border-bottom-color: rgb(38, 107, 38);
-   width: 40px;
-   height: 40px;
-   animation-name: spin3;
-   }
- @keyframes spin3{
-    0%{ transform: rotate(0deg);}
-    30%{ transform: rotate(100deg);}
-    100%{transform: rotate(360deg);}
- }
+ 

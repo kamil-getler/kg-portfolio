@@ -1,111 +1,13 @@
-@mixin border{
-   
-    display: block;
-    overflow: hidden;
-    height: 140px;
-    border: 1px solid white;
-    
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap');
+
+.style__font{
+    font-family: 'Cairo', sans-serif;  
+    top:260px;
+    right:25%;
+    font-size: 200px;
+    position: absolute;
+
 }
-@mixin imgCointener{
-    
-        margin: auto;
-        background-size: cover;
-        width: 96px;
-        height: 96px;
-       }
-      
-
-.content{
-    display:flex;
-    
-    &__left{
-        margin-top: 100px;
-        flex-flow: column nowrap; 
-        align-items: center;
-        display: flex;
-        
-        
-        width: 160px;
-        border-right:1px solid 
-        }
-        &__point{
-           
-            background: yellow;
-            flex-flow: column nowrap;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        
-        }
-   
-    }
-
-.content__right {
-    position: relative;
-    top:20px;
-    margin-left: 60px;
-    margin-right: 60px;
-      
-      height: 100%;
-      width: 100%;
-      
-      &--html{
-       
-    
-        @include border;
-        background: rgb(209, 97, 17);
-        transition-property: height;
-        transition-duration: 2s;
-        
-        
-        
-        }
-        &--css{
-            @include border;
-            
-            margin-top:30px ;
-            background: rgb(72, 123, 235);
-            transition-property: height;
-            transition-duration: 2s;
-          }
-          &--js{
-            @include border;
-            margin-top:30px ;
-            background: rgb(225, 245, 49);
-            transition-property: height;
-            transition-duration: 2s;
-          }
-    }
-
-    .img__container--html{
-        background-image: url('../assets/img/html.png');
-        @include imgCointener;
-    
-    }
-  
-     .img__container--css{
-        background-image: url('../assets/img/css.png');
-        @include imgCointener;}
-       
-    
-       .img__container--js{
-        background-image: url('../assets/img/js.png');
-        @include imgCointener;}
-
-      
-    
-        .content__right--html:hover{
-           height: 300px
-      
-        }
-        
-        .content__right--css:hover{
-            height: 300px
-       
-         }
-        
-         .content__right--js:hover{
-            height: 300px
-       
-         }
-         
+p{
+    color:black
+}
