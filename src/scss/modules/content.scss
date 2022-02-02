@@ -1,13 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap');
 
+.content{
+    margin-top: 28vh;
+}
 .style__font{
-    font-family: 'Cairo', sans-serif;  
-    top:260px;
-    right:25%;
-    font-size: 200px;
-    position: absolute;
+    color: rgb(66, 123, 209);
+    display: block;
+    font-family: 'Cairo', sans-serif;
+    font-size: 8vw;
+    text-align: right;
+    margin-right: 10vw;
+    margin-bottom: 0px;
+    &--ph{
+        font-family:Courier New ;
+        font-weight:bold;
+        display: block; 
+        font-size: 8vw;
+        text-align: right;
+        margin-right: 10vw;
+        color: black;
+        
+}
+}
+@media(max-width: 1112px) {
+    .content{
+        margin-top: 20vh;
+    }
+
+    .style__font--ph{
+
+    color:white;
+    }
+    }
+@media(max-width: 690px){
+.style__font{
+    font-size: 100px;
+    color:rgb(49, 139, 199);
+}
+.content{
+        margin-top: 40vh;
+    }
 
 }
-p{
-    color:black
-}
+
+
